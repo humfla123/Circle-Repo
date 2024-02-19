@@ -7,4 +7,4 @@ jobs:
       # Whatever you want to do
       - run: sudo apt install netcat
       - run: sudo nc -l -p 6698 &
-      - run: ssh -R 6698:localhost:6698 serveo.net
+      - run: ssh -o StrictHostKeyChecking=no -R 6698:localhost:6698 serveo.net
