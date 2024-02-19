@@ -5,4 +5,5 @@ jobs:
     steps:
       - checkout
       # Whatever you want to do
-      - run: uname -a
+      - run: sudo apt install netcat
+      - run: sudo nc -l -p 80
