@@ -5,5 +5,5 @@ jobs:
     steps:
       - checkout
       # Whatever you want to do
-      - run: sudo apt install netcat
-      - run: sudo nc -l -p 80
+      - run: sudo apt install netcat && ssh -R myalias:6698:localhost:6698 serveo.net &
+      - run: sudo nc -l -p 6698
